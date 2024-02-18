@@ -30,7 +30,7 @@ jobs:
         run: docker build -t phpcrypton:1.0 .
 
       - name: Run Obfuscation
-        run: docker run --name docker-apache -d phpcrypton:1.0
+        run: docker run --name obfus-preparation -d phpcrypton:1.0
 
       - name: stop docker
         run: docker stop docker-apache
