@@ -1,11 +1,11 @@
-name: IAST
+name: Obfuscation Testing
 on:
   push:
     branches:
       - main
 jobs:
   obfus:
-    name: Obfuscation Testing
+    name: obfuscation test
     permissions: write-all
     runs-on: ubuntu-latest
     steps:
